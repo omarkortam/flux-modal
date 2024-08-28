@@ -30,7 +30,7 @@ flux = (  # Download image layers to run FLUX_Q8.gguf model
         "comfy --skip-prompt model download --url https://huggingface.co/comfyanonymous/flux_text_encoders/resolve/main/t5xxl_fp8_e4m3fn.safetensors --relative-path models/clip",
     )
     .run_commands(  # download the lora anime -- optional you can disbale
-        "comfy --skip-prompt model download --url https://civitai.com/models/640247/mjanimefluxlora?modelVersionId=716064 --relative-path models/loras --set-civitai-api-token 660761c07cb90e21999bb3637e78e007"
+        "comfy --skip-prompt model download --url https://civitai.com/models/640247/mjanimefluxlora?modelVersionId=716064 --relative-path models/loras --set-civitai-api-token [USE YOUR CIVITAI TOKEN]"
     )
     # put down here additional layers to your likings below
     .run_commands( # XLabs ControlNet node 
